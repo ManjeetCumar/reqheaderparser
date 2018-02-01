@@ -2,6 +2,7 @@ const express = require('express');                  // accepts is present in ex
 const useragent = require('express-useragent');
 const app = express();                               // instantiate the express
 
+app.use(express.static('view'));
 app.use(useragent.express());                        // instantiating the dependency in express
 
 app.get('/api/whoami', function(req, res){
