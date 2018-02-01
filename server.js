@@ -12,7 +12,7 @@ app.get('/api/whoami', function(req, res){
 	var lang = req.acceptsLanguages();
 	var software = req.useragent;                    // get user information using useragent dependency
     software = software.platform+", "+software.os;
-    res.json({'ipaddress' : ip, 'language': lang[0], 'software': software}); // can use /res.send({ipaddress : ip});/ also    
+    res.json({'ip address' : ip, 'language': lang[0], 'software': software}); // can use /res.send({ipaddress : ip});/ also    
 	
 });
 
